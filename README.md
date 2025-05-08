@@ -1,15 +1,19 @@
-# Course Management System
+# Cursos 5 CBS 🚒💚
 
-This application allows you to manage course information for volunteers and update Excel files with course completion dates.
+Es una ayuda para poner de manera más fácil las fechas en las que se completa un curso y tener un registro de mejor manera.
+
+## Agradecimientos
+
+- Sergio Cortés Prado
+- Clemente Garmendia Pascal
 
 ## Features
 
-- Upload Excel files with two sheets: "Honorarios" and "Activos"
-- Select volunteer type (Honorarios or Activos)
-- Choose from available courses
-- Enter volunteer name and course completion date
-- Automatically update Excel file with new information
-- View current data in the application
+- Subir archivo de excel.
+- Tiene una interfaz limpia y facil.
+- Permite agregar más de un voluntario.
+- Permite eliminar los errores.
+- Permite descargar el archivo modificado.
 
 ## Setup
 
@@ -25,21 +29,7 @@ streamlit run app.py
 
 ## Excel File Format
 
-The Excel file should have two sheets:
-1. "Honorarios" - For honorary volunteers
-2. "Activos" - For active volunteers
+El Excel debiera tener dos hojas:
+1. "Honorarios" 
+2. "Activos" 
 
-Each sheet should have:
-- First column: "Volunteer" (volunteer names)
-- Subsequent columns: Course names
-
-## Usage
-
-1. Upload your Excel file using the file uploader
-2. Select the volunteer type (Honorarios or Activos)
-3. Choose the course from the dropdown menu
-4. Enter the volunteer's name
-5. Select the course completion date
-6. Click "Update Course Information" to save the changes
-
-The application will automatically update the Excel file with the new information. 
