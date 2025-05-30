@@ -16,8 +16,8 @@ def load_excel(file_path):
         sheet_names = xl.sheet_names
         
         # Find sheets by case-insensitive matching
-        honorarios_sheet = next((name for name in sheet_names if name.upper() == 'HONORARIOS '), None)
-        activos_sheet = next((name for name in sheet_names if name.upper() == 'ACTIVOS '), None)
+        honorarios_sheet = next((name for name in sheet_names if name.upper() == 'HONORARIOS'), None)
+        activos_sheet = next((name for name in sheet_names if name.upper() == 'ACTIVOS'), None)
         
         if not honorarios_sheet:
             st.error("Could not find a sheet named 'HONORARIOS' (case-insensitive). Please check your Excel file.")
@@ -52,8 +52,8 @@ def save_excel(file_path, honorarios_df, activos_df):
     """Save both sheets to the Excel file."""
     try:
         with pd.ExcelWriter(file_path, engine='openpyxl') as writer:
-            honorarios_df.to_excel(writer, sheet_name='HONORARIOS ', index=False)
-            activos_df.to_excel(writer, sheet_name='ACTIVOS ', index=False)
+            honorarios_df.to_excel(writer, sheet_name='HONORARIOS', index=False)
+            activos_df.to_excel(writer, sheet_name='ACTIVOS', index=False)
         return True
     except Exception as e:
         st.error(f"Error saving Excel file: {str(e)}")
