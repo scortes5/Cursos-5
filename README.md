@@ -12,7 +12,7 @@ https://cursosquintacbs.streamlit.app
 ## Features
 
 - Subir archivo de excel.
-- Tiene una interfaz limpia y facil.
+- Tiene una interfaz limpia y fácil.
 - Permite agregar más de un voluntario.
 - Permite eliminar los errores.
 - Permite descargar el archivo modificado.
